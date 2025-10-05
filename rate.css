@@ -1,0 +1,119 @@
+body {
+    background-image: url("https://img.traveltriangle.com/blog/wp-content/uploads/2017/11/Places-To-Visit-In-Netherlands_15th-jun1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    transform: scale(2.8);
+    transform-origin: center center;
+    image-rendering: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+}
+
+.carousel {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  display: none;
+  object-fit: cover;
+}
+.slide.active {
+  display: block;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f2f2f2;
+}
+
+.image-container {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.star-rating {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+gap: 8px;
+  font-size: 30px;
+  color: #ddd;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 15px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.star-rating .star.active {
+  color: gold;
+}
+
+.star-rating .star:hover,
+.star-rating .star:hover ~ .star {
+  color: gold;
+}
